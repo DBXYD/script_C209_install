@@ -1,0 +1,11 @@
+# Let NetworkManager manage all devices on this system
+network:  
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp0s3:
+      addresses: [10.10.71.100/24]
+      gateway4: 10.10.71.250
+      nameservers:
+        search: [ensea.fr]
+        addresses: [10.10.71.251, 193.51.46.142]
